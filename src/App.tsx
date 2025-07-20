@@ -11,7 +11,7 @@ import InventoryManagement from '@/pages/InventoryManagement'
 function App() {
   return (
     <Router>
-      <SidebarProvider>
+      <SidebarProvider defaultOpen={false}>
         <div className="min-h-screen bg-background font-sans antialiased">
           <DashboardLayout>
             <Routes>

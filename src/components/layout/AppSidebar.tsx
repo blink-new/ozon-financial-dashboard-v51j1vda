@@ -11,6 +11,7 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
+  SidebarRail,
 } from '@/components/ui/sidebar'
 
 const menuItems = [
@@ -45,7 +46,7 @@ export function AppSidebar() {
   const location = useLocation()
 
   return (
-    <Sidebar>
+    <Sidebar collapsible="offcanvas">
       <SidebarHeader className="border-b border-sidebar-border">
         <div className="flex items-center gap-2 px-4 py-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground">
@@ -84,6 +85,7 @@ export function AppSidebar() {
           © 2024 Ozon Financial Dashboard
         </div>
       </SidebarFooter>
+      <SidebarRail />
     </Sidebar>
   )
 }
